@@ -1,8 +1,10 @@
-import Link from 'next/Link';
+import Link from 'next/link';
 import ItemStyles from './styles/ItemStyles';
 import PriceTag from './styles/PriceTag';
 import Title from './styles/Title';
 import formatMoney from '../lib/formatMoney';
+import DeleteProduct from './DeleteProduct';
+import AddToCart from './AddToCart';
 
 export default function Product({ product }) {
   return (
@@ -16,7 +18,20 @@ export default function Product({ product }) {
       </Title>
       <PriceTag>{formatMoney(product.price)}</PriceTag>
       <p>{product.description}</p>
-      {/* TODO: Add buttons to edit abd delete item */}
+      <div className="buttonList">
+        <Link
+          href={{
+            pathname: 'update',
+            query: {
+              id: product.id,
+            },
+          }}
+        >
+          Edit ✏️
+        </Link>
+        <AddToCart id={product.id} />
+        <DeleteProduct id={product.id}>Delete</DeleteProduct>
+      </div>
     </ItemStyles>
   );
 }
