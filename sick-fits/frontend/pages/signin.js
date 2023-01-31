@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import RequestReset from '../components/RequestReset';
 import SignUp from '../components/SignUp';
-import SignIn from '../components/SingIn';
+import SignIn from '../components/SignIn';
 
 const GridStyles = styled.div`
   display: grid;
