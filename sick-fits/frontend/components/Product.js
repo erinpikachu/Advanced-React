@@ -11,7 +11,7 @@ export default function Product({ product }) {
     <ItemStyles>
       <img
         src={product?.photo?.image?.publicUrlTransformed}
-        alt="{product.name}"
+        alt={product.name}
       />
       <Title>
         <Link href={`/product/${product.id}`}>{product.name}</Link>

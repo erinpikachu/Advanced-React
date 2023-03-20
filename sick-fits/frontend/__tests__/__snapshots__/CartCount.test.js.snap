@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CartCount/> Martches snapshot 1`] = `
+<div>
+  <span
+    class="CartCount__AnimationStyles-sc-xxvp4g-1 eILtgZ"
+  >
+    <div>
+      <div
+        class="CartCount__DotStyles-sc-xxvp4g-0 ggjQds count"
+      >
+        11
+      </div>
+    </div>
+  </span>
+</div>
+`;
+
+exports[`<CartCount/> Updates via props 1`] = `
+<div>
+  <span
+    class="CartCount__AnimationStyles-sc-xxvp4g-1 eILtgZ"
+  >
+    <div>
+      <div
+        class="CartCount__DotStyles-sc-xxvp4g-0 ggjQds count count-enter-done"
+      >
+        12
+      </div>
+    </div>
+  </span>
+</div>
+`;

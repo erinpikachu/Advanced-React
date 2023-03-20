@@ -32,9 +32,8 @@ export default function SignUp() {
   async function handleSubmit(e) {
     e.preventDefault();
     const res = await signup().catch(console.error);
-    console.log(res);
     restForm();
-    // Send the rmail and password to graphalAPI
+    // Send the email and password to graphalAPI
   }
 
   return (
@@ -80,8 +79,10 @@ export default function SignUp() {
             onChange={handleChange}
           />
         </label>
-        <button type="submit">Sign In!</button>
+        <button type="submit">Sign Up!</button>
       </fieldset>
     </Form>
   );
 }
+
+export { SIGNUP_MUTATION };
